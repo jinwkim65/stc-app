@@ -8,7 +8,7 @@ Traditionally, CTs determine their shift locations independently, visiting aroun
 
 In addition to location assignment automation, we aim to enhance inventory management by replacing an existing Excel sheet with a more robust database system. This system will provide a seamless user experience for updating and tracking inventory counts.
 
-### Proposed Tech Stack
+### Tech Stack
 - **React JS**: Frontend User Interface
 - **PostgreSQL**: Database Management
 - **Flask**: Backend Development
