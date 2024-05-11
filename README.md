@@ -1,4 +1,4 @@
-## CPSC 419 Project Overview
+## Project Overview
 
 We are developing a web application with two primary objectives: to assist STC cluster technicians (CTs) in effectively managing inventory through an intuitive interface and to automate the process of assigning CTs to specific locations within a campus cluster. 
 
