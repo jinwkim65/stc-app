@@ -1,12 +1,10 @@
 ## Project Overview
 
-We are developing a web application with two primary objectives: to assist STC cluster technicians (CTs) in effectively managing inventory through an intuitive interface and to automate the process of assigning CTs to specific locations within a campus cluster. 
+This project is a web application with two primary objectives: to assist STC cluster technicians (CTs) in effectively managing inventory through an intuitive interface and to automate the process of assigning CTs to specific locations within a campus cluster. 
 
 Cluster technicians are tasked with maintaining printers and computers at various locations across campus, each divided into four zones. These zones typically encompass eight locations and a central hub. At each location, CTs manage items such as printers, paper, toner, computers, and peripherals. 
 
-Traditionally, CTs determine their shift locations independently, visiting around four locations per shift within their designated zone. However, starting this semester, locations are pre-assigned by CT coordinators (COORDS), necessitating a manual process. Our goal is to automate this assignment process, prioritizing locations that haven't been visited recently. Additionally, factors like location proximity will influence shift assignments; for example, distant locations may warrant fewer assigned visits.
-
-In addition to location assignment automation, we aim to enhance inventory management by replacing an existing Excel sheet with a more robust database system. This system will provide a seamless user experience for updating and tracking inventory counts.
+Traditionally, CTs determine their shift locations independently, visiting around four locations per shift within their designated zone. However, starting this semester, locations are pre-assigned by CT coordinators (COORDS), necessitating a manual process. Through the creation of this website, we accelerate the assignment process and provide a valuable interface which SCT admins, STC employees, and Yale students can all use for their individual needs.
 
 ### Tech Stack
 - **React JS**: Frontend User Interface
