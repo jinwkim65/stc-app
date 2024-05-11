@@ -1,0 +1,268 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.home{
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.about {
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+.home-page{
+  background-color: #71717a;
+}
+
+
+
+/* Login page styling*/
+
+.sign-up, .sign-in, .log-out{
+  color: #000026FF;
+
+}
+.mainContainer {
+  flex-direction: column;
+  display: flex;
+  flex:1;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 10px;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 64px;
+  font-weight: bolder;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.resultContainer,
+.historyItem {
+  flex-direction: row;
+  display: flex;
+  width: 400px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.historyContainer {
+  flex-direction: column;
+  display: flex;
+  height: 200px;
+  align-items: center;
+  flex-grow: 5;
+  justify-content: flex-start;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000026FF;
+
+
+}
+
+.inputContainer > .errorLabel {
+  color: red;
+  font-size: 12px;
+
+}
+
+.inputBox {
+  height: 48px;
+  width: 400px;
+  font-size: large;
+  border-radius: 8px;
+  border: 1px solid grey;
+  padding-left: 8px;
+}
+
+
+/*About page styling*/
+.about-container{
+    min-height: 100vh;
+    display: flex;
+    flex: 1;
+
+}
+
+/*Report page Styling*/
+
+.report-page-container{
+    min-height: 100vh;
+    display: flex;
+    flex: 1;
+
+}
+
+/*Home page styling*/
+.home-page{
+
+  min-height: 100vh;
+    display: flex;
+    flex: 1;
+
+}
+
+
+.profile-icon:hover{
+  opacity: 100%;
+
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: 6px;
+  background:
+    conic-gradient(from 135deg at top,currentColor 90deg, #0000 0) 0 calc(50% - 4px)/17px 8.5px,
+    radial-gradient(farthest-side at bottom left,#0000 calc(100% - 6px),currentColor calc(100% - 5px) 99%,#0000) top right/50%  50% content-box content-box,
+    radial-gradient(farthest-side at top        ,#0000 calc(100% - 6px),currentColor calc(100% - 5px) 99%,#0000) bottom   /100% 50% content-box content-box;
+  background-repeat: no-repeat;
+  animation: l11 1s infinite linear;
+}
+@keyframes l11{
+  100%{transform: rotate(1turn)}
+}
+
+
+
+.inputButton:hover{
+
+  transform: scale(1.1);
+  color: #000026FF;
+  background-color:white ;
+
+
+}
+
+.inputButton{
+
+     background-color: #000026FF;
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 40px;
+  aspect-ratio: 1;
+  color: #000026FF;
+  position: relative;
+  background:
+    conic-gradient(from 134deg at top   ,currentColor 92deg,#0000 0) top,
+    conic-gradient(from -46deg at bottom,currentColor 92deg,#0000 0) bottom;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+}
+
+
+
+.loader2:before {
+  content:'';
+  position: absolute;
+  inset: 0;
+  --g:currentColor 14.5px,#0000 0 calc(100% - 14.5px),currentColor 0;
+  background:
+    linear-gradient( 45deg,var(--g)),
+    linear-gradient(-45deg,var(--g));
+   animation: l7 1.5s infinite cubic-bezier(0.3,1,0,1);
+}
+@keyframes l7 {
+   33%  {inset:-10px;transform: rotate(0deg)}
+   66%  {inset:-10px;transform: rotate(90deg)}
+   100% {inset:0    ;transform: rotate(90deg)}
+}
+
+
+.outer-div {
+  display: flex; /* Set display to flex */
+}
+
+.inner-div {
+
+  flex-shrink: 1;
+}
+
+
+.socials-container{
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  /*height: 200px; !* Example height *!*/
+  /*border: 1px solid black; !* Just for visualization *!*/
+}
+
+
+    .github, .linkedin {
+        flex: 1; /* Each child takes half of the container */
+        height: 30px; /* Example height */
+        /*border: 1px solid red; !* Just for visualization *!*/
+    }
+
+    .nav-item{
+        flex:1;
+    }
+
+
+
+    .logout-button, .login-button {
+    background-color: #000026FF;
+
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+        border-style: solid;
+}
+
+    .logout-button:hover,.login-button:hover{
+      background-color: white;
+      color: #000026FF;
+      border-style: solid;
+    }
+
+
+    .welcome-user{
+       font-family: 'Arial', sans-serif;
+        font-size: 14px; /* Adjust font size as needed */
+        color: rgb(255, 255, 255); /* Shiny gold color */
+        /*text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);*/
+    }
+
+
+    .vertical-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 80%; /* Adjust this value to position the line where you want */
+    width: 1px; /* Adjust the width of the line */
+    background-color: white; /* Change the color of the line as needed */
+}
+
